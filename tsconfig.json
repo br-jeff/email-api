@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "strict": true,
+    "inlineSourceMap": true,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "outDir": "./dist"
+  },
+  "include": [
+    "./**/*.ts",
+    "jest.config.ts",
+    ".prettierrc",
+    ".eslintrc.js" ],
+  "exclude": ["node_modules/**/*", "dist", ".vscode/**/*", ".idea/**/*"]
+}
