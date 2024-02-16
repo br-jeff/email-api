@@ -1,7 +1,16 @@
 // import settings from "../../config/settings";
 import { Request, Response } from "express";
-import { IExpressParams } from "src/interfaces/express-params";
 import errorResponse from "./error_response";
+import { NodeError } from "../erro_type";
+
+type IExpressParams = {
+  params: Record<string, unknown>
+  query: Record<string, unknown>
+  body: Record<string, unknown>
+  req: Request
+  res: Response
+}
+
 export default function defaultMiddleware<T>(
   useCase: (args: IExpressParams) => Promise<T>
 ) {
@@ -18,8 +27,8 @@ export default function defaultMiddleware<T>(
       })
 
       res.json(result);
-    } catch (error: unknown) {
-      errorResponse(error, res)
+    } catch (error) {
+      errorResponse(error as NodeError, res)
     }
     return res;
   };
