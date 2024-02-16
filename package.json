@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalavh/email.git"
+    "url": "git+https://github.com/br-jeff/email.git"
   },
   "author": "Jefferson Ferreira",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kalavh/email/issues"
+    "url": "https://github.com/br-jeff/email/issues"
   },
-  "homepage": "https://github.com/kalavh/email#readme",
+  "homepage": "https://github.com/br-jeff/email#readme",
   "dependencies": {
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
