@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // import settings from "../../config/settings";
 import { Request, Response } from "express";
 import errorResponse from "./error_response";
 import { NodeError } from "../erro_type";
 
 type IExpressParams = {
-  params: Record<string, unknown>
-  query: Record<string, unknown>
-  body: Record<string, unknown>
+  params: any
+  query: any
+  body: any
   req: Request
   res: Response
 }

@@ -17,6 +17,7 @@ services:
       SMTP_SECURE: 'false'
       SMTP_USERNAME: teste@teste.com
       SMTP_PASSWORD: dev
+      AWS_REGION: us-east-1
     working_dir: "/app"
     command: bash -c "npm install && npm run dev"
     depends_on:

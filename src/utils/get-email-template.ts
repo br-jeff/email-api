@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import util from 'util'
-
 import _ from 'lodash'
 
 const readFile = util.promisify(fs.readFile)

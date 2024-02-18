@@ -1,5 +1,7 @@
 # Email API
   A simple NodeJS API to send email
+  This project use more functional desing.
+
 ## Requirements
   You need install docker and docker compose.
   To run use:
