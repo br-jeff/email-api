@@ -35,6 +35,12 @@ const settings = {
       }
       return process.env.SMTP_PASSWORD
     },
+    get awsRegion(): string {
+      if (!process.env.AWS_REGION) {
+        throw new Error('AWS_REGION environment variable is not defined')
+      }
+      return process.env.AWS_REGION
+    },
   }
   
   export default settings
