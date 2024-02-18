@@ -20,7 +20,6 @@ export default async function welcomeEmailUseCase({
     to: [emailTo],
   }
 
-  console.log({ email })
   try {
     await sendEmail(email)
   } catch (err) {

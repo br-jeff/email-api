@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "cffe2ff6-0d00-4800-8658-11bf45d46428",
+		"name": "email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27941686"
+	},
+	"item": [
+		{
+			"name": "welcome email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Username Jeff\",\n    \"emailFrom\": \"mysystem@email.com\",\n    \"emailTo\": \"newuser_jeff@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/welcome-email",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"welcome-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

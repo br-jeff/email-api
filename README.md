@@ -1,6 +1,8 @@
 # Email API
-  A simple NodeJS API to send email
-  This project use more functional desing.
+  ### A simple NodeJS API Example to send email, this project use more function desing.
+
+ ![Welcome-image](documentation/welcome-email.png)
+
 
 ## Requirements
   You need install docker and docker compose.
@@ -10,14 +12,10 @@
   ```
 
 ## NodeJS API
+ You can import postman colletion in documentation folder.
  ```
   http://localhost:8080/
  ```
-
-
-| METHOD | Path | Description|
-| -----|------- |:-------------:|
-| GET |  /  | Just return a simple Hello World  |
 
 
 ## MailHog (Email interface)
